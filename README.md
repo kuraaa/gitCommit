@@ -4,6 +4,3 @@
 
 ## Установка
 
-1. Склонируйте проект:
-   ```bash
-   git clone https://github.com/твой-username/my-github-commits.git
