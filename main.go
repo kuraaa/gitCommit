@@ -8,16 +8,13 @@ import (
 )
 
 func main() {
-	// Запускаем программу в бесконечном цикле
+
 	for {
-		// Получаем текущее время и выводим его
 		now := time.Now()
 		fmt.Printf("Текущее время: %s\n", now)
 
-		// Делаем коммиты
 		git.MakeRandomCommits()
 
-		// Рассчитываем время до следующего дня (полночь)
 		next := time.Date(now.Year(), now.Month(), now.Day()+1, 0, 0, 0, 0, now.Location())
 		duration := time.Until(next)
 
