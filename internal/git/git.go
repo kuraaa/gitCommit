@@ -10,9 +10,9 @@ import (
 
 // MakeRandomCommits делает случайное количество коммитов
 func MakeRandomCommits() {
-	// Случайное количество коммитов в день (например, от 1 до 5)
+
 	rand.Seed(time.Now().UnixNano())
-	commitsCount := rand.Intn(5) + 1
+	commitsCount := rand.Intn(5)
 	fmt.Printf("Сегодня будет сделано %d коммитов\n", commitsCount)
 
 	for i := 0; i < commitsCount; i++ {
